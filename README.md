@@ -1,1 +1,3 @@
 # BBLMedia
+
+Django web app
