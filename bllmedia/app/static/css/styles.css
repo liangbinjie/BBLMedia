@@ -1,0 +1,28 @@
+html,
+body {
+    height: 100%;
+    font-size: 1rem;
+    margin: 0;
+    max-width: 100%;
+}
+
+.gradient {
+    background: rgb(47, 0, 215);
+    background: linear-gradient(169deg, rgba(47, 0, 215, 1) 0%, rgba(161, 0, 200, 1) 100%);
+}
+
+.page-header {
+    margin-top: 4rem;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.services h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact {
+    color: #fff;
+}
