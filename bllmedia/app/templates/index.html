@@ -1,13 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        {% load static %}
-        <title>Hello wolrd</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="{% static 'styles.css' %}" rel="stylesheet">
-    </head>
-    <body>
-        <h1>Hello world</h1>
-    </body>
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLL Media</title>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'img/logo.png' %}" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="{% static 'img/1.png' %}" alt="logo" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contacto' %}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header gradient">
+        <div class="container pt-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-5">
+                    <h2>Hello world</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo placeat distinctio non rerum cupiditate.</p>
+                    <button type="button" class="btn btn-outline-success btn-lg">Read More</button>
+                    <button type="button" class="btn btn-outline-warning btn-lg">Play video</button>
+                </div>
+                <div class="col-md-5">
+                    <img src="https://www.dinterweb.com/wp-content/uploads/2018/11/Email-Marketing.png" width="300px"></img>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,138.7C672,139,768,181,864,213.3C960,245,1056,267,1152,256C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </header>
+
+    <section class="companies">
+        <div class="container text-center">
+            <div class="row g-3">
+                <div class="col-md-2"><img src="{% static 'img/c1.png' %}" alt="" width="100px"></div>
+                <div class="col-md-2"><img src="{% static 'img/c2.png' %}" alt="" width="100px"></div>
+                <div class="col-md-2"><img src="{% static 'img/c3.png' %}" alt="" width="100px"></div>
+                <div class="col-md-2"><img src="{% static 'img/c4.png' %}" alt="" width="100px"></div>
+                <div class="col-md-2"><img src="{% static 'img/c5.png' %}" alt="" width="100px"></div>
+                <div class="col-md-2"><img src="{% static 'img/c6.png' %}" alt="" width="100px"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="services gradient">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L48,101.3C96,139,192,213,288,229.3C384,245,480,203,576,165.3C672,128,768,96,864,96C960,96,1056,128,1152,149.3C1248,171,1344,181,1392,186.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="container p-5">
+            <h1>Services we offer</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary" type="button">Button</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary" type="button">Button</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1506947411487-a56738267384?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2338&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary" type="button">Button</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,138.7C672,139,768,181,864,213.3C960,245,1056,267,1152,256C1248,245,1344,203,1392,181.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    
+    <section class="gradient contact">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L48,101.3C96,139,192,213,288,229.3C384,245,480,203,576,165.3C672,128,768,96,864,96C960,96,1056,128,1152,149.3C1248,171,1344,181,1392,186.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <div class="container p-5">
+            <h1>Hello world</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia aut iure laudantium sunt hic necessitatibus consequatur, accusantium excepturi provident aliquid explicabo aperiam expedita atque nesciunt, accusamus culpa cupiditate molestias
+                id.
+            </p>
+        </div>
+
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
 </html>
