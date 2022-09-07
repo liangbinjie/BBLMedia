@@ -26,3 +26,24 @@ body {
 .contact {
     color: #fff;
 }
+
+.footer {
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+ul {
+    list-style-type: none;
+    display: block;
+    padding-left: 0;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff
+}
+
+.information {
+    color: #fff;
+}

@@ -19,4 +19,4 @@ def contacto(request):
         
         else:
             data['form'] = formulario
-    return render(request, 'contacto.html', data)
+    return render(request, 'index.html', data)

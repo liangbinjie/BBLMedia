@@ -6,7 +6,7 @@ from .models import Contacto
 
 
 class ContactFiltering(admin.ModelAdmin):
-    list_display = ['email']
+    list_display = ['email', 'description']
 
 
 admin.site.register(Contacto, ContactFiltering)
