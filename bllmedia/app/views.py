@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import ContactoForms
 
 # Create your views here.
@@ -19,4 +19,12 @@ def contacto(request):
         
         else:
             data['form'] = formulario
-    return render(request, 'index.html', data)
+
+    return redirect(index)
+
+
+# def login(request):
+
+#     if request.method == 'POST':
+
+#     return render(request, 'auth/login.html')
