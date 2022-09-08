@@ -21,10 +21,3 @@ def contacto(request):
             data['form'] = formulario
 
     return redirect(index)
-
-
-# def login(request):
-
-#     if request.method == 'POST':
-
-#     return render(request, 'auth/login.html')
